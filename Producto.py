@@ -11,9 +11,9 @@ class Producto:
     self.nombre=nombre 
     self.marca=marca
     self.precio=precio
+
   def imprimirDetalles(self):
-		
-	#Este método es para que se visualicen los argumentos de la clase ya creada
+    #Este método es para que se visualicen los argumentos de la clase ya creada
     print("Desde el método:") 
     print("Nombre del producto:",self.nombre)
     print("Marca:",self.marca)
