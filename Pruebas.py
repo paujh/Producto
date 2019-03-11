@@ -4,6 +4,7 @@ Paula Jorge Hinostrosa
 '''
 
 from Producto import *
+from Tienda import *
 
 class Pruebas: #Aquí indicamos que la clase Pruebas está vacía, ya que sólo queremos que sea para probar la clase Producto
 	pass
@@ -17,3 +18,10 @@ P3=Producto("Set de Muñecas Disney Collection Princesas","DISNEY COLLECTION",22
 P1.imprimirDetalles()
 P2.imprimirDetalles()
 P3.imprimirDetalles()
+
+Tienda1=Tienda("Play Store",P1)
+Tienda2=Tienda("Juguetibici",P2)
+Tienda3=Tienda("Toy Store",P3)
+Tienda1.imprimirDetalles()
+Tienda2.imprimirDetalles()
+Tienda3.imprimirDetalles()
