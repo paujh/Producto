@@ -12,9 +12,8 @@ class Producto:
     self.marca=marca
     self.precio=precio
 
-  def imprimirDetalles(self):
-    #Este método es para que se visualicen los argumentos de la clase ya creada
-    print("Desde el método:") 
-    print("Nombre del producto:",self.nombre)
-    print("Marca:",self.marca)
-    print("El precio es: $",self.precio)
+  def __str__(self):
+    #Este método lo usaremos para reemplazar "imprimirDetalles".
+    #Ejecutará la misma función, que es mostrar al usuario la información del objeto que se proporcione respecto a la clase	
+    return "Nombre del producto:"+str(self.nombre)+"\nMarca:"+str(self.marca)+"\nPrecio: $"+str(self.precio)
+
