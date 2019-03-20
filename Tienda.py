@@ -15,6 +15,6 @@ class Tienda:
     self.producto=producto
     self.cliente=cliente
   
-    def __str__(self): 
+  def __str__(self): 
     #Este método es para que se visualicen los argumentos de la clase ya creada
     return "El nombre de la tienda es: "+str(self.nombre)+"\nUbicación: "+str(self.ubicacion)+"\n"+str(self.producto)+"\n"+str(self.cliente)
