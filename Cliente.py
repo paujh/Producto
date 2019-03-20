@@ -9,10 +9,8 @@ class Cliente:
   def __init__(self,nombre,saldo):
     self.nombre=nombre 
     self.saldo=saldo
-    
-  #Haremos un método para mostrar los detalles que contiene la clase Ciente y que sean visibles para el usuario
-  def imprimirDetalles(self):
-	#Este método es para que se visualicen los argumentos de la clase ya creada
-    print("Desde el método:") 
-    print("Nombre del producto:",self.nombre)
-    print("Tiene un saldo de: $",self.saldo)
+  
+  #Reemplazaremos el método imprimirDetalles por str, que hacen lo mismo, pero el último podría decrise que es más fácil de manejar al ya ser determinado del programa
+  def __str__(self):
+    return "Nombre del cliente: "+str(self.nombre)+"\nSaldo: $"+str(self.saldo)
+
