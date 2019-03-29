@@ -8,9 +8,9 @@ class Producto:
   def __init__(self,nombre,marca,precio):
   #Le damos los atributos que deseemos a la clase, en este caso, tres.
   #Entonces, el constructor recibirá tres argumentos.
-    self.nombre=nombre 
-    self.marca=marca
-    self.precio=precio
+    self.nombre = nombre 
+    self.marca = marca
+    self.precio = precio
 
   def __str__(self):
     #Este método lo usaremos para reemplazar "imprimirDetalles".
