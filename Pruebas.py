@@ -15,9 +15,9 @@ class Pruebas: #Aquí indicamos que la clase Pruebas está vacía, ya que sólo 
 muñeco = Producto("Muñeco Batman","LEGO",650)
 triciclo = Producto("Triciclo","Apache",1199)
 muñecas = Producto("Set de Muñecas Disney Collection Princesas","DISNEY COLLECTION",2295)
-print(str(muñeco)
-print(str(triciclo)
-print(str(muñecas)
+print(muñeco)
+print(triciclo)
+print(muñecas)
 
 maria = Cliente("María Pérez",2500)
 margarita = Cliente("Margarita Téllez",1450)
