@@ -10,4 +10,5 @@ Ahora queremos unir todas las clases para que el cliente pueda elegir productos 
 También ya usamos el MenuCliente para interactuar con el usuario.
 
 Profesora, esta parte no estuve segura de como se debía de escribir para sumar los precios de los productos del carrito, por lo mismo, si pudiera corregir el código se lo agradecería mucho.
-Por lo mismo, ya no supe cómo poner el condicional para ver si el cliente tiene el saldo suficiente
+Por lo mismo, ya no supe cómo poner el condicional para ver si el cliente tiene el saldo suficiente y tampoco hice pruebas de este en el archivo de Pruebas. 
+
