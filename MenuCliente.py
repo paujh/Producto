@@ -13,4 +13,6 @@ class MenuCliente:
     nombre = input()
     saldo = input("Ingrese su saldo: ") 
     registro = nombre + saldo
+   
+  
 
