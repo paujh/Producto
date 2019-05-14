@@ -13,6 +13,16 @@ class MenuCliente:
     nombre = input()
     saldo = input("Ingrese su saldo: ") 
     registro = nombre + saldo
-   
+    cliente = Tienda(Cliente(nombre,saldo))
+    cliente.almacenagregar()
+		while 0<1:
+			eleccion=input("\n¿Que desea hacer?:\na)Ver carrito\nb)Comprar\nc)Eliminar producto del carrito\nEscriba su elección 'a', 'b' o 'c': ")
+			if eleccion == "a":
+				cliente.almacenagregar()
+			elif eleccion == "b":
+				cliente.comprar()
+			elif eleccion == "c":
+				Eliminarproducto = input("\nIntroduzca el nombre del articulo que desea eliminar: ")
+				cliente.eliminar(Eliminarproducto)
   
 
