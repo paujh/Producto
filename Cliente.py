@@ -9,8 +9,23 @@ class Cliente:
   def __init__(self,nombre,saldo):
     self.nombre = nombre 
     self.saldo = saldo
+    self.carro = []
   
   #Reemplazaremos el método imprimirDetalles por str, que hacen lo mismo, pero el último podría decrise que es más fácil de manejar al ya ser determinado del programa
   def __str__(self):
     return "Nombre del cliente: "+str(self.nombre)+"\nSaldo: $"+str(self.saldo)
-
+  
+  def agregarCarrito(self,producto): #Agrega un productos seleccionados por el usuario al carrito del cliente.
+		carritocliente = Carrito()
+		carritocliente.agregar(producto)
+		self.carro = carritocliente.carrito
+    
+  def comprar(self): #Permite realizar la compra de los productos del carrito, si es que el cliente cuenta con saldo suficiente.
+		Total = 0
+		for i in range(0,len(self.carrito)):
+			Total = Total + self.carrito[i].precio
+		if float(Total) > float(self.saldo):
+			print("\n No tienes saldo suficiente para realizar tu compra")
+		else:
+			self.saldo = float(self.saldo) - float(Total)
+			print("Tu compra ha sido realizada.")
