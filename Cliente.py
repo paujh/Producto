@@ -16,14 +16,14 @@ class Cliente:
     return "Nombre del cliente: "+str(self.nombre)+"\nSaldo: $"+str(self.saldo)
   
   def agregarCarrito(self,producto): #Agrega un productos seleccionados por el usuario al carrito del cliente.
-		carritocliente = Carrito()
-		carritocliente.agregar(producto)
-		self.carro = carritocliente.carrito
+		carro1 = Carrito()
+		carro1.agregar(producto)
+		self.carro = carro1.carrito
     
   def comprar(self): #Permite realizar la compra de los productos del carrito, si es que el cliente cuenta con saldo suficiente.
 		Total = 0
-		for i in range(0,len(self.carrito)):
-			Total = Total + self.carrito[i].precio
+		for i in range(0,len(self.carro)):
+			Total = Total + self.carro[i].precio
 		if float(Total) > float(self.saldo):
 			print("\n No tienes saldo suficiente para realizar tu compra")
 		else:
