@@ -14,11 +14,11 @@ class MenuCliente:
     saldo = input("Ingrese su saldo: ") 
     registro = nombre + saldo
     cliente = Tienda(Cliente(nombre,saldo))
-    cliente.almacenagregar()
+    cliente.catalogoproductos()
 		while 0<1:
 			eleccion=input("\n¿Que desea hacer?:\na)Ver carrito\nb)Comprar\nc)Eliminar producto del carrito\nEscriba su elección 'a', 'b' o 'c': ")
 			if eleccion == "a":
-				cliente.almacenagregar()
+				cliente.catalogoproductos()
 			elif eleccion == "b":
 				cliente.comprar()
 			elif eleccion == "c":
