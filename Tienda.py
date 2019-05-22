@@ -40,8 +40,7 @@ class Tienda:
         Cliente.comprar
       else: 
         pass
-    
+    csvarchivo.close() 
     def eliminar(self,producto):
 		  self.carrito.eliminarProducto(producto) 
 
-csvarchivo.close() 
